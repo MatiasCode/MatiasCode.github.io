@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="./libs/pickadate.js-3.6.2/lib/themes/classic.date.css">
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+
 </head>
 <body>
-    <div>
+    
+    <!--PAGINA 1-->
+    <div id="page1_content" >
         <div id="home_page" title="Ver Turnos">
-        <!--PAGINA 1-->
         <div id="firs_page" class="row main_content">
         <div class="col-lg-4" >
             <img
@@ -89,16 +89,44 @@
             </div>
         </div>
     </div>
+    <!-- PAGINA 2-->
+    <div id="page2_content">
+        <div id="second_page" class="container mt-4">
+            <div class="shadow rounded mx-auto">
+                <h1>Farmacias de turno</h1>
+            </div>
+            <div id="calendar" class="mx-auto">
+                    <div class="container">
+                        <div>
+                            <input type="date" name="date" value="">
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-success">Ver</button>
+                        </div>
+                    </div>
+            </div>
+            <div id="lista">
+                <ul>
+                </ul>
+            </div>
+            <div>
+                colaboran
+            </div>
+        </div>
+        </div>
     </div>
-    <!-- Scripts -->
+    <script src="./js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="./js/moment.js"></script>
     <script src="./js/index.js"></script>
+    <script type="module" src="./js/turno.js"></script>
     <script src="./libs/pickadate.js-3.6.2/lib/picker.js"></script>
     <script src="./libs/pickadate.js-3.6.2/lib/picker.date.js"></script>
     <script>
         $(document).ready(function(){
             $('#img_cel_farmacia_turno').click(function(){
-                var url = "./turnos.php";
+                var url = "./turnos.html";
                 $(location).attr('href',url);
             })
         });
