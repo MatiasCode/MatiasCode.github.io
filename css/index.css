@@ -1,0 +1,56 @@
+@font-face{
+ font-family: "Biko";
+ src: url("../assets/font/biko/Biko_Regular.otf");
+}
+
+
+.main_content{
+    max-height: 500px;
+    width: 100%;
+    display: block;
+    padding: 20px;
+}
+
+.main_content img {
+    float: left;
+    margin-inline-start: auto;
+    max-width: 400px;
+    max-height: 500px;
+}
+
+#titulo {
+    font-size: 70px;
+    font-family: Biko;
+}
+
+#titulo span {
+    border-bottom: solid 2px green;
+}
+
+#info {
+    margin-top: 5%;
+}
+#info p {
+    text-align: justify;
+    font-family: Biko;
+    font-size: 25px;
+}
+
+#lista_items ul {
+    list-style: none;
+    font-size: 25px;
+}
+
+
+
+body{
+    background: url('../assets/imagenes/banner_farmacia.jpg');
+    font-family: "Biko";
+}
+
+
+
+#img_cel_farmacia_turno{
+    cursor: pointer;
+}
+
